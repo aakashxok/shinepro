@@ -19,7 +19,7 @@ from inspect import getfullargspec
 StartTime = time.time()
 
 # enable logging
-FORMAT = "[TianaBot] %(message)s"
+FORMAT = "[SHINEPRO] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -95,7 +95,7 @@ if ENV:
     API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
     DB_URI = os.environ.get("DATABASE_URL")
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "TianaxUpdates")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "SHINEVCUPDATES")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
@@ -115,7 +115,7 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "TianaxSupport")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "SHINEVCBOT_SUPPORT")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
